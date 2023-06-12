@@ -1,0 +1,35 @@
+#playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #6699ff, #9900cc);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #playButton:hover {
+    background: linear-gradient(to bottom right, #3366cc, #660099);
+  }
+  @keyframes movingBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  body {
+    animation: movingBackground 4s linear infinite;
+    background: linear-gradient(to bottom right, #4d4d4d, #4400ff);
+    background-size: 100% 200%;
+  }
+  
